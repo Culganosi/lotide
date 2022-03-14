@@ -6,19 +6,12 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// allItems : array of strings to iterate through
-// itemsToCount: object specifying what to count
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
-
-  // for of loop to iterate through elements to find # of each name
   for (const item of allItems) {
     console.log(item);
-    // if statement to add number depending on whether or not there are multiples of each name
-    // item = iterating through each element of the allItems array, which is firstNames in the test case
     if (itemsToCount[item]) {
       if (results[item]) {
-        // adding 1 to each of the elements of allItems unless zero
         results[item] += 1;
       } else {
         results[item] = 1;

@@ -6,7 +6,6 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-
 let eqArrays = function(arr1, arr2) {
   let same = true;
   if (arr1.length !== arr2.length) {
@@ -27,12 +26,12 @@ const letterPositions = function(sentence) {
   for (let i = 0; i < sentence.length; i++) {
     if (sentence[i] !== " ") { // eliminate spaces
       if (results[sentence[i]]) { // truthy
-         results[sentence[i]].push(i) // so we will push to array // push(i) works but not push[i], if its a method i can't call it with .push[] only .push()
+        results[sentence[i]].push(i); // so we will push to array // push(i) works but not push[i], if its a method i can't call it with .push[] only .push()
       } else {
         results[sentence[i]] = [i];
       }
+    }
   }
-}
   return results;
 };
 

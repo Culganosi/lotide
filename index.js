@@ -7,4 +7,4 @@ module.exports = {
   head,
   tail,
   middle,
-}
+};
