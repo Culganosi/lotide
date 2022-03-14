@@ -1,3 +1,5 @@
+const assertEqual = require('./assertEqual');
+
 const middle = function(arr) {
   let result = [];
   let middle = Math.floor(arr.length / 2);
